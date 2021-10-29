@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Locomotive Scroll train</title>
+</head>
+<body>
+    
+    <div class="container" data-scroll-container>
+
+        <section  data-scroll-section>
+            <h1 data-scroll>Hey, there!</h1>
+            <p role="img" aria-label="" data-scroll  data-scroll-speed="3">
+                👋
+            </p>
+        </section>
+        <section data-scroll-section>
+            <h2 data-scroll data-scroll-speed="1">
+                What's up?
+            </h2>
+            <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="100" role="img" aria-label="">
+                😬
+            </p>
+        </section>
+    </div>
+    
+    <script type="module" src="./dist/bundle.js"></script>
+</body>
+</html>
