@@ -1,8 +1,9 @@
 import LocomotiveScroll from 'locomotive-scroll';
 
-const scroller = new LocomotiveScroll({
+const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
+  multiplier:0.9
   //lerp: 1 // +/- fps / refresh images
 });
 
@@ -10,3 +11,12 @@ const scroller = new LocomotiveScroll({
 /* const target = document.querySelector('#js-target');
 
 scroll.scrollTo(target); */
+
+scroll.on('call', func => {
+  if(func === "slowDown")
+    slowDown();
+});
+
+const slowDown = () => {
+  console.log("coucou")
+}
